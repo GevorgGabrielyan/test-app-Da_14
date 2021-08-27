@@ -1,0 +1,29 @@
+@import "../../../assets/helpers/mixins.scss";
+
+.container {
+  margin-top: 100px;
+
+  .stock-list-container {
+    position: relative;
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .column-block {
+      margin: 10px;
+      @include line-overflow()
+    }
+
+    tr {
+      &:hover {
+        background: whitesmoke;
+      }
+    }
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+}
