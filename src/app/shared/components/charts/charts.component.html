@@ -1,0 +1,14 @@
+<ng-container *ngIf="data.length">
+  <ngx-charts-bar-vertical
+    [scheme]="colorScheme"
+    [results]="data"
+    [gradient]="true"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="'Date'"
+    [yAxisLabel]="'Amount'">
+  </ngx-charts-bar-vertical>
+</ng-container>

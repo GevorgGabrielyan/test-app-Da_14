@@ -4,6 +4,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {SharedModule} from "../../shared/shared.module";
 import {CommonModule} from "@angular/common";
 import {StockDetailComponent} from "./stock-detail.component";
+import {ChartsModule} from "../../shared/components/charts/charts.component";
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
   ],
   imports: [
     SharedModule,
+    ChartsModule,
     RouterModule.forChild(routes),
     CommonModule,
   ]

@@ -1,1 +1,18 @@
-<p>stock-detail works!</p>
+<div class="mat-elevation-z8 container stock-detail pt-3">
+  <div class="row" *ngIf="stockDetail">
+    <div class="col-9 charts-info">
+      <app-charts [data]="charts"></app-charts>
+    </div>
+    <div class="col-3 company-info">
+      <div class="logo d-flex justify-content-center">
+        <img [src]="'../../../assets/images/brocken-image.png/'" [alt]="stockDetail.name">
+      </div>
+      <h1 class="text-center">{{ selectedStock }}</h1>
+      <h2 class="text-center">{{ stockDetail.name }}</h2>
+      <h4 class="text-center">{{ stockDetail.exchange }}</h4>
+      <h2 class="text-center">{{ stockDetail.phone }}</h2>
+      <h4 class="text-center">{{ stockDetail.description }}</h4>
+    </div>
+  </div>
+</div>
+
