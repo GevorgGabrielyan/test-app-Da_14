@@ -1,0 +1,22 @@
+.stock-detail {
+  .text-center {
+    text-align: center;
+  }
+
+  .charts-info {
+    padding: 20px;
+  }
+  .company-info {
+    padding: 20px;
+    border-left: 1px solid lightgray;
+
+    .logo {
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+    }
+  }
+}
